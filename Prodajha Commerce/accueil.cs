@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Prodajha_Commerce
 {
-    public partial class Form1 : Form
+    public partial class accueil : Form
     {
-        public Form1()
+        public accueil()
         {
             InitializeComponent();
         }

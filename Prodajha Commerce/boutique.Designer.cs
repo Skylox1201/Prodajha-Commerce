@@ -1,17 +1,17 @@
 ﻿
 namespace Prodajha_Commerce
 {
-    partial class Accueil
+    partial class Boutique
     {
         /// <summary>
-        /// Variable nécessaire au concepteur.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Nettoyage des ressources utilisées.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,24 +21,46 @@ namespace Prodajha_Commerce
             base.Dispose(disposing);
         }
 
-        #region Code généré par le Concepteur Windows Form
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-        /// le contenu de cette méthode avec l'éditeur de code.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Boutique));
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.Profil = new System.Windows.Forms.ToolStripButton();
             this.Message = new System.Windows.Forms.ToolStripButton();
             this.Notification = new System.Windows.Forms.ToolStripButton();
+            this.Devanture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Devanture)).BeginInit();
             this.SuspendLayout();
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 263);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(600, 296);
+            this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(606, 263);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(382, 296);
+            this.flowLayoutPanel2.TabIndex = 4;
             // 
             // bindingNavigator1
             // 
@@ -62,17 +84,17 @@ namespace Prodajha_Commerce
             this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 12);
             this.bindingNavigator1.PositionItem = null;
             this.bindingNavigator1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1191, 83);
-            this.bindingNavigator1.TabIndex = 0;
+            this.bindingNavigator1.Size = new System.Drawing.Size(988, 69);
+            this.bindingNavigator1.TabIndex = 5;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
             // toolStripLabel1
             // 
-            this.toolStripLabel1.Font = new System.Drawing.Font("Comic Sans MS", 26.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel1.Font = new System.Drawing.Font("Comic Sans MS", 20.2F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))));
             this.toolStripLabel1.ForeColor = System.Drawing.SystemColors.Info;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(211, 62);
+            this.toolStripLabel1.Size = new System.Drawing.Size(164, 48);
             this.toolStripLabel1.Text = "Prodajha";
             // 
             // Profil
@@ -83,7 +105,7 @@ namespace Prodajha_Commerce
             this.Profil.Image = ((System.Drawing.Image)(resources.GetObject("Profil.Image")));
             this.Profil.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Profil.Name = "Profil";
-            this.Profil.Size = new System.Drawing.Size(29, 62);
+            this.Profil.Size = new System.Drawing.Size(29, 48);
             this.Profil.Text = "Profil";
             // 
             // Message
@@ -94,7 +116,7 @@ namespace Prodajha_Commerce
             this.Message.Image = ((System.Drawing.Image)(resources.GetObject("Message.Image")));
             this.Message.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Message.Name = "Message";
-            this.Message.Size = new System.Drawing.Size(29, 62);
+            this.Message.Size = new System.Drawing.Size(29, 48);
             this.Message.Text = "Messages";
             // 
             // Notification
@@ -105,36 +127,52 @@ namespace Prodajha_Commerce
             this.Notification.Image = ((System.Drawing.Image)(resources.GetObject("Notification.Image")));
             this.Notification.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Notification.Name = "Notification";
-            this.Notification.Size = new System.Drawing.Size(29, 62);
+            this.Notification.Size = new System.Drawing.Size(29, 48);
             this.Notification.Text = "toolStripButton3";
             this.Notification.ToolTipText = "Notification";
             // 
-            // Accueil
+            // Devanture
+            // 
+            this.Devanture.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Devanture.Location = new System.Drawing.Point(0, 86);
+            this.Devanture.Name = "Devanture";
+            this.Devanture.Size = new System.Drawing.Size(988, 171);
+            this.Devanture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Devanture.TabIndex = 6;
+            this.Devanture.TabStop = false;
+            // 
+            // Boutique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1191, 607);
+            this.ClientSize = new System.Drawing.Size(988, 564);
+            this.Controls.Add(this.Devanture);
             this.Controls.Add(this.bindingNavigator1);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Accueil";
-            this.Text = "accueil";
-            this.Load += new System.EventHandler(this.Accueil_Load);
+            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Name = "Boutique";
+            this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Devanture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripButton Profil;
         private System.Windows.Forms.ToolStripButton Message;
         private System.Windows.Forms.ToolStripButton Notification;
+        private System.Windows.Forms.PictureBox Devanture;
     }
 }
-

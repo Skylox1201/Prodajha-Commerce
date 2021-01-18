@@ -83,10 +83,19 @@
     <Compile Include="accueil.Designer.cs">
       <DependentUpon>accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="boutique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boutique.Designer.cs">
+      <DependentUpon>boutique.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="accueil.resx">
       <DependentUpon>accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="boutique.resx">
+      <DependentUpon>boutique.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,6 +128,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="Static\icons8-bell-100.png" />
+    <Content Include="Static\icons8-male-user-60.png" />
+    <Content Include="Static\icons8-new-post-100.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

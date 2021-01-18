@@ -16,7 +16,7 @@ namespace Prodajha_Commerce
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new accueil());
+            Application.Run(new Accueil());
         }
     }
 }

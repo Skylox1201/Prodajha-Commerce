@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Prodajha_Commerce
 {
-    public partial class Accueil : Form
+    public partial class Boutique : Form
     {
-        public Accueil()
+        public Boutique()
         {
             InitializeComponent();
         }
 
-        private void SplitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Accueil_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

@@ -105,7 +105,7 @@ namespace Prodajha_Commerce
             this.toolStripButton3.Size = new System.Drawing.Size(29, 62);
             this.toolStripButton3.Text = "toolStripButton3";
             // 
-            // Form1
+            // accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -113,7 +113,7 @@ namespace Prodajha_Commerce
             this.ClientSize = new System.Drawing.Size(1191, 607);
             this.Controls.Add(this.bindingNavigator1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "accueil";
             this.Text = "accueil";
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);

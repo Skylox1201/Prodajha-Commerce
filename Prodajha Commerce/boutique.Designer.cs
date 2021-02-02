@@ -31,36 +31,14 @@ namespace Prodajha_Commerce
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Boutique));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.Profil = new System.Windows.Forms.ToolStripButton();
             this.Message = new System.Windows.Forms.ToolStripButton();
             this.Notification = new System.Windows.Forms.ToolStripButton();
-            this.Devanture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Devanture)).BeginInit();
             this.SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 263);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(600, 296);
-            this.flowLayoutPanel1.TabIndex = 3;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(606, 263);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(382, 296);
-            this.flowLayoutPanel2.TabIndex = 4;
             // 
             // bindingNavigator1
             // 
@@ -131,17 +109,6 @@ namespace Prodajha_Commerce
             this.Notification.Text = "toolStripButton3";
             this.Notification.ToolTipText = "Notification";
             // 
-            // Devanture
-            // 
-            this.Devanture.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Devanture.Location = new System.Drawing.Point(0, 86);
-            this.Devanture.Name = "Devanture";
-            this.Devanture.Size = new System.Drawing.Size(988, 171);
-            this.Devanture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Devanture.TabIndex = 6;
-            this.Devanture.TabStop = false;
-            // 
             // Boutique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -149,30 +116,23 @@ namespace Prodajha_Commerce
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(988, 564);
-            this.Controls.Add(this.Devanture);
             this.Controls.Add(this.bindingNavigator1);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Boutique";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Devanture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripButton Profil;
         private System.Windows.Forms.ToolStripButton Message;
         private System.Windows.Forms.ToolStripButton Notification;
-        private System.Windows.Forms.PictureBox Devanture;
     }
 }

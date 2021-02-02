@@ -44,5 +44,10 @@ namespace Prodajha_Commerce
                 MessageBox.Show("Connexion echouée");
             }
         }
+
+        private void Profil_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

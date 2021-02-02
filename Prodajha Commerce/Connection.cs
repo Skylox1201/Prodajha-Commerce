@@ -12,18 +12,9 @@ using BCrypt.Net;
 
 namespace Prodajha_Commerce
 {
-
-    public class Session
-    {
-        public string Id { get; set; }
-        public Session(string id)
-        {
-            Id = id;
-        }
-    }
-
     public partial class Connection : Form
     {
+        public Client session;
         MySqlConnection conn = new MySqlConnection("database=boutique; server=localhost; port=3306;user id = root; pwd=");
         public Connection()
         {
@@ -32,7 +23,7 @@ namespace Prodajha_Commerce
             textBoxPassword.Text = "Mot de passe";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        protected void button1_Click(object sender, EventArgs e)
         {
             string email = textBoxMail.Text.ToLower();
             string pwd = textBoxPassword.Text;
@@ -51,7 +42,7 @@ namespace Prodajha_Commerce
                     string valeur = reader.GetString(0);
                     if (BCrypt.Net.BCrypt.Verify(pwd, reader.GetString(1)))
                     {
-                        Session session = new Session(reader.GetString(2));
+                        session = new Client(reader.GetString(2));
                         Boutique Boutique = new Boutique();
                         Boutique.Show();
                         this.Hide();
@@ -114,6 +105,14 @@ namespace Prodajha_Commerce
                     button1.PerformClick();
                 }
             }
+        }
+    }
+    public class Client
+    {
+        public string client { get; set; }
+        public Client(string id)
+        {
+            client = id;
         }
     }
 }

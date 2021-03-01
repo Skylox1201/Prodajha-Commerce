@@ -23,15 +23,13 @@ namespace Prodajha_Commerce
         public void Article()
         {
             MySqlCommand command = conn.CreateCommand();
-
-            command.CommandText = "SELECT email, password, idClient FROM client WHERE email = @email;";
-            try
-            {
+            Connection connection = new Connection();
+            command.Parameters.AddWithValue("@client", connection.session.client);
+            command.CommandText = "SELECT * FROM article INNER JOIN magasin ON magasin.idMagasin = article.idMagasin WHERE magasin.idProprietaire = @client";
+                try
+                {
                 conn.Open();
                 MySqlDataReader reader = command.ExecuteReader();
-
-                command.Parameters.AddWithValue("@boutique", idBoutique);
-                command.CommandText = "SELECT email, password, idClient FROM client WHERE email = @boutique;";
                 foreach (int i in reader)
                 {
                     string valeur = reader.GetString(0);

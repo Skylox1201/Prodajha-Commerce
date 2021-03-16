@@ -14,7 +14,6 @@ namespace Prodajha_Commerce
 {
     public partial class Connection : Form
     {
-        public Client session;
         MySqlConnection conn = new MySqlConnection("database=boutique; server=localhost; port=3306;user id = root; pwd=");
         public Connection()
         {
@@ -42,8 +41,8 @@ namespace Prodajha_Commerce
                     string valeur = reader.GetString(0);
                     if (BCrypt.Net.BCrypt.Verify(pwd, reader.GetString(1)))
                     {
-                        session = new Client(reader.GetString(2));
-                        Boutique Boutique = new Boutique();
+                        string client = reader.GetString(2);
+                        Boutique Boutique = new Boutique(client);
                         Boutique.Show();
                         this.Hide();
                     }
@@ -58,9 +57,9 @@ namespace Prodajha_Commerce
                 }
                 conn.Close();
             }
-            catch
+            catch(MySqlException ex)
             {
-                MessageBox.Show("Connexion echouée");
+                Console.WriteLine(ex);
             }
 
         }
@@ -105,14 +104,6 @@ namespace Prodajha_Commerce
                     button1.PerformClick();
                 }
             }
-        }
-    }
-    public class Client
-    {
-        public string client { get; set; }
-        public Client(string id)
-        {
-            client = id;
         }
     }
 }

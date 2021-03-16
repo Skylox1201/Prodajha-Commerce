@@ -337,10 +337,5 @@ namespace Prodajha_Commerce
                 label1.Focus();
             }
         }
-
-        private void Profil_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

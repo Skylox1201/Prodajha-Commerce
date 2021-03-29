@@ -111,7 +111,7 @@ namespace Prodajha_Commerce
             this.ArticleDescription.AccessibleName = "Description de l\'Article";
             this.ArticleDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.ArticleDescription.Location = new System.Drawing.Point(11, 331);
-            this.ArticleDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ArticleDescription.Margin = new System.Windows.Forms.Padding(2);
             this.ArticleDescription.Name = "ArticleDescription";
             this.ArticleDescription.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.ArticleDescription.Size = new System.Drawing.Size(632, 210);
@@ -191,7 +191,7 @@ namespace Prodajha_Commerce
             this.pictureBox2.ImageLocation = "C:\\Users\\alexa\\source\\repos\\Prodajha Commerce\\Prodajha Commerce\\Resources\\logo_Pr" +
     "odajha.png";
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(90, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -204,7 +204,7 @@ namespace Prodajha_Commerce
             this.ArticleImage.AccessibleName = "Image Article";
             this.ArticleImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ArticleImage.Location = new System.Drawing.Point(669, 44);
-            this.ArticleImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ArticleImage.Margin = new System.Windows.Forms.Padding(2);
             this.ArticleImage.Name = "ArticleImage";
             this.ArticleImage.Size = new System.Drawing.Size(280, 280);
             this.ArticleImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -218,7 +218,7 @@ namespace Prodajha_Commerce
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F);
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(700, 371);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 58);
             this.button1.TabIndex = 15;
@@ -243,7 +243,7 @@ namespace Prodajha_Commerce
             this.ArticleCategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.ArticleCategorie.FormattingEnabled = true;
             this.ArticleCategorie.Location = new System.Drawing.Point(125, 92);
-            this.ArticleCategorie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ArticleCategorie.Margin = new System.Windows.Forms.Padding(2);
             this.ArticleCategorie.Name = "ArticleCategorie";
             this.ArticleCategorie.Size = new System.Drawing.Size(215, 33);
             this.ArticleCategorie.TabIndex = 17;
@@ -252,7 +252,7 @@ namespace Prodajha_Commerce
             // 
             this.ArticleLienImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.ArticleLienImage.Location = new System.Drawing.Point(336, 168);
-            this.ArticleLienImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ArticleLienImage.Margin = new System.Windows.Forms.Padding(2);
             this.ArticleLienImage.Multiline = true;
             this.ArticleLienImage.Name = "ArticleLienImage";
             this.ArticleLienImage.Size = new System.Drawing.Size(288, 106);
@@ -285,6 +285,7 @@ namespace Prodajha_Commerce
             this.Supprimer.TabIndex = 20;
             this.Supprimer.Text = "Supprimer";
             this.Supprimer.UseVisualStyleBackColor = false;
+            this.Supprimer.Click += new System.EventHandler(this.Supprimer_Click);
             // 
             // ArticleView
             // 
@@ -308,7 +309,7 @@ namespace Prodajha_Commerce
             this.Controls.Add(this.ArticleQuantite);
             this.Controls.Add(this.ArticleName);
             this.Controls.Add(this.ArticleImage);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ArticleView";
             this.Text = "Article";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ArticleView_FormClosed);

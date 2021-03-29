@@ -73,6 +73,24 @@ namespace Prodajha_Commerce
             if(Supprimer.Enabled == true)
             {
                 string article = ArticleModif.getArticle();
+                MySqlCommand command = conn.CreateCommand();
+
+                command.Parameters.AddWithValue("@idArt", article);
+
+                command.CommandText = "CALL delete_article(@idArt)";
+
+                try
+                {
+                    conn.Open();
+                    command.ExecuteNonQuery();
+                    conn.Close();
+                    this.Close();
+
+                }
+                catch (InvalidOperationException ex)
+                {
+                    Console.WriteLine(ex);
+                }
             }
         }
 
@@ -272,6 +290,15 @@ namespace Prodajha_Commerce
             if (e.KeyCode == Keys.Return)
             {
                 ArticlePrix.Focus();
+            }
+        }
+
+        private void Supprimer_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Voulez vous vraiment supprimer définitivement cet article ?", "Supprimer article", MessageBoxButtons.YesNo);
+            if(result == DialogResult.Yes)
+            {
+                delete_article();
             }
         }
     }

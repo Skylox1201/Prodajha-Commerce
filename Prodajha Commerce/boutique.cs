@@ -74,6 +74,9 @@ namespace Prodajha_Commerce
                 if (i == 0)
                 {
                     MessageBox.Show("Magasin non trouvé");
+                    this.Close();
+                    Connection Connection = new Connection();
+                    Connection.Show();
                 }
                 conn.Close();
             }
@@ -86,11 +89,15 @@ namespace Prodajha_Commerce
         private void ArticleGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int row = e.RowIndex;
-            string idart = ArticleGrid[0, row].Value.ToString();
-            string idClient = user.getClient();
-            ArticleView articleView = new ArticleView(idClient, idart);
-            articleView.Show();
-            this.Hide();
+            MessageBox.Show(row.ToString());
+            if (row != -1)
+            {
+                string idart = ArticleGrid[0, row].Value.ToString();
+                string idClient = user.getClient();
+                ArticleView articleView = new ArticleView(idClient, idart);
+                articleView.Show();
+                this.Hide();
+            }
         }
 
         private void Boutique_FormClosed(object sender, FormClosedEventArgs e)

@@ -27,8 +27,6 @@ namespace Prodajha_Commerce
             {
                 ArticleModif.setArticle(article);
                 MySqlCommand cmd = conn.CreateCommand();
-                MySqlDataAdapter mydtadp_user = new MySqlDataAdapter(); // créé un objet pour remplir
-                DataTable table_article = new DataTable(); // créé un objet de table de données
                 Supprimer.Visible = true;
                 Supprimer.Enabled = true;
 

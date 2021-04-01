@@ -89,7 +89,6 @@ namespace Prodajha_Commerce
         private void ArticleGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int row = e.RowIndex;
-            MessageBox.Show(row.ToString());
             if (row != -1)
             {
                 string idart = ArticleGrid[0, row].Value.ToString();

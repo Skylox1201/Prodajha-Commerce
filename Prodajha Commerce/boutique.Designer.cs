@@ -190,6 +190,7 @@ namespace Prodajha_Commerce
             this.CodePostal.Name = "CodePostal";
             this.CodePostal.Size = new System.Drawing.Size(327, 32);
             this.CodePostal.TabIndex = 11;
+            this.CodePostal.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CodePostal_KeyDown);
             this.CodePostal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CodePostal_KeyPress);
             this.CodePostal.Leave += new System.EventHandler(this.CodePostal_Leave);
             // 

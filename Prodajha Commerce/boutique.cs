@@ -72,7 +72,7 @@ namespace Prodajha_Commerce
                     Ville.Text = Magasin.getCity();
                     CodePostal.Text = Magasin.get_code_postal();
                     MagasinRegion.Text = Magasin.getRegion();
-                    Telephone.Text = Magasin.getRegion();
+                    Telephone.Text = Magasin.getPhone();
                 }
                 if (i == 0) //Si on a pas trouvé du magasin
                 {
@@ -93,6 +93,7 @@ namespace Prodajha_Commerce
         {
             int row = e.RowIndex;
             if (row != -1) //Si on a pas cliqué sur le nom des colonnes
+            if (row != -1)
             {
                 string idart = ArticleGrid[0, row].Value.ToString(); //On récupère l'id de l'article
                 string idClient = user.getClient(); //On récupère l'id de l'utilisateur

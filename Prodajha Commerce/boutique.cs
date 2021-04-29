@@ -33,7 +33,7 @@ namespace Prodajha_Commerce
             DataTable table_article = new DataTable(); // créé un objet de table de données
 
             cmd.Parameters.AddWithValue("@client", client);
-            cmd.CommandText = "SELECT article.idArticle, article.nom, article.prix, article.quantite, categorie.nom FROM article INNER JOIN magasin ON magasin.idMagasin = article.idMagasin INNER JOIN categorie ON article.idCategorie = categorie.idCategorie WHERE magasin.idProprietaire = @client";
+            cmd.CommandText = "SELECT article.idArticle, article.nom, article.prix, article.quantite, categorie.nom AS 'categorie' FROM article INNER JOIN magasin ON magasin.idMagasin = article.idMagasin INNER JOIN categorie ON article.idCategorie = categorie.idCategorie WHERE magasin.idProprietaire = @client";
             mydtadp_user.SelectCommand = cmd;
             mydtadp_user.Fill(table_article); // rempli cette table par les données récupéré par la commande SQL
 
@@ -69,7 +69,7 @@ namespace Prodajha_Commerce
                     Ville.Text = Magasin.getCity();
                     CodePostal.Text = Magasin.get_code_postal();
                     MagasinRegion.Text = Magasin.getRegion();
-                    Telephone.Text = Magasin.getRegion();
+                    Telephone.Text = Magasin.getPhone();
                 }
                 if (i == 0)
                 {
@@ -89,7 +89,6 @@ namespace Prodajha_Commerce
         private void ArticleGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int row = e.RowIndex;
-            MessageBox.Show(row.ToString());
             if (row != -1)
             {
                 string idart = ArticleGrid[0, row].Value.ToString();
